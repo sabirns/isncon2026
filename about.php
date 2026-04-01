@@ -1,0 +1,170 @@
+<?php 
+$pageTitle = "About | ISNCON 2026 — 55th Annual Conference";
+$currentPage = 'about';
+include 'header.php';
+?>
+
+	<section class="page-hero">
+		<div class="page-hero-bg">
+			<svg class="kidney-bg kidney-bg-1" viewBox="0 0 200 200">
+				<path fill="#1a2a6c"
+					d="M100 20c-40 0-70 30-80 70-10 45 10 100 60 100 20 0 40-10 50-30 10-20 10-40 0-60-10-20-20-40-30-80z" />
+				<circle cx="100" cy="100" r="80" stroke="#1a2a6c" stroke-width="1" fill="none" stroke-dasharray="4 8" />
+			</svg>
+			<svg class="kidney-bg kidney-bg-2" viewBox="0 0 200 200">
+				<path fill="#c0523a"
+					d="M100 20c-40 0-70 30-80 70-10 45 10 100 60 100 20 0 40-10 50-30 10-20 10-40 0-60-10-20-20-40-30-80z" />
+			</svg>
+			<svg class="kidney-float kidney-float-1" viewBox="0 0 64 64">
+				<path fill="#1a2a6c"
+					d="M32 8c-8 0-16 8-20 20-4 12-2 24 6 30 6 4 14 6 20 2 8-4 12-14 10-24-2-12-10-22-16-28z" />
+			</svg>
+			<svg class="kidney-float kidney-float-2" viewBox="0 0 64 64">
+				<path fill="#00b8c8"
+					d="M32 8c-8 0-16 8-20 20-4 12-2 24 6 30 6 4 14 6 20 2 8-4 12-14 10-24-2-12-10-22-16-28z" />
+			</svg>
+		</div>
+		<div class="page-hero-content">
+			<div class="page-hero-label">About the Conference</div>
+			<h1 class="page-hero-title">ISNCON <span>2026</span></h1>
+			<p class="page-hero-desc">Join us in Kochi, Kerala for the 55th Annual Conference of the Indian Society of Nephrology</p>
+		</div>
+	</section>
+
+	<section class="about-intro">
+		<div class="container">
+			<div class="about-intro-grid">
+				<div class="about-intro-content reveal">
+					<h2>Precision in Renal Care</h2>
+					<p>The 55th Annual Conference of the Indian Society of Nephrology (ISNCON 2026) represents a pivotal moment in the advancement of nephrology care in India and across the globe.</p>
+					<p>This prestigious event will bring together over 2000 delegates from 50+ countries, including world-renowned nephrologists, researchers, clinicians, and healthcare professionals to discuss the latest advancements in kidney care, treatment modalities, and cutting-edge research.</p>
+					<p>Through a combination of scientific sessions, workshops, poster presentations, and networking opportunities, ISNCON 2026 aims to foster collaboration and knowledge exchange that will shape the future of nephrology.</p>
+				</div>
+				<div class="about-intro-image reveal"><img src="images/fort-kochi.jpg" alt="ISNCON Conference" /></div>
+			</div>
+		</div>
+	</section>
+
+	<div class="stats-grid">
+		<div class="stat-item reveal">
+			<div class="stat-num">2000+</div>
+			<div class="stat-label">Expected Delegates</div>
+		</div>
+		<div class="stat-item reveal" style="transition-delay:0.1s">
+			<div class="stat-num">100+</div>
+			<div class="stat-label">Scientific Sessions</div>
+		</div>
+		<div class="stat-item reveal" style="transition-delay:0.2s">
+			<div class="stat-num">50+</div>
+			<div class="stat-label">Countries</div>
+		</div>
+		<div class="stat-item reveal" style="transition-delay:0.3s">
+			<div class="stat-num">4</div>
+			<div class="stat-label">Days of Excellence</div>
+		</div>
+	</div>
+
+	<section class="history">
+		<div class="section-bg">
+			<svg class="section-kidney section-kidney-1" viewBox="0 0 200 200">
+				<circle cx="100" cy="100" r="80" stroke="#1a2a6c" stroke-width="1" fill="none" stroke-dasharray="4 8" />
+			</svg>
+		</div>
+		<div class="container">
+			<div class="section-header reveal">
+				<div class="section-label">Our Journey</div>
+				<h2 class="section-title">History of ISNCON</h2>
+				<div class="section-divider"></div>
+			</div>
+			<div class="timeline">
+				<div class="timeline-item reveal">
+					<div class="timeline-content">
+						<div class="timeline-year">1970</div>
+						<div class="timeline-desc">First Annual Conference of Indian Society of Nephrology held in Chennai</div>
+					</div>
+				</div>
+				<div class="timeline-item reveal">
+					<div class="timeline-content">
+						<div class="timeline-year">1995</div>
+						<div class="timeline-desc">ISNCON reaches 25th milestone, establishing itself as the premier nephrology event in Asia</div>
+					</div>
+				</div>
+				<div class="timeline-item reveal">
+					<div class="timeline-content">
+						<div class="timeline-year">2015</div>
+						<div class="timeline-desc">ISNCON 2015 in Kochi draws record attendance with 3000+ delegates</div>
+					</div>
+				</div>
+				<div class="timeline-item reveal">
+					<div class="timeline-content">
+						<div class="timeline-year">2026</div>
+						<div class="timeline-desc">55th Annual Conference returns to Kochi with focus on Precision Medicine in Nephrology</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="objectives">
+		<div class="section-bg">
+			<svg class="section-kidney section-kidney-2" viewBox="0 0 200 200">
+				<path fill="#c0523a"
+					d="M100 20c-40 0-70 30-80 70-10 45 10 100 60 100 20 0 40-10 50-30 10-20 10-40 0-60-10-20-20-40-30-80z" />
+			</svg>
+		</div>
+		<div class="container">
+			<div class="section-header reveal">
+				<div class="section-label">Conference Goals</div>
+				<h2 class="section-title">Our Objectives</h2>
+				<div class="section-divider"></div>
+			</div>
+			<div class="objectives-grid">
+				<div class="objective-card reveal">
+					<div class="objective-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+						</svg></div>
+					<h3>Knowledge Exchange</h3>
+					<p>Share latest research and clinical advancements in nephrology with global experts</p>
+				</div>
+				<div class="objective-card reveal" style="transition-delay:0.1s">
+					<div class="objective-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+							<circle cx="9" cy="7" r="4" />
+							<path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+						</svg></div>
+					<h3>Networking</h3>
+					<p>Connect with peers, mentors, and industry leaders from around the world</p>
+				</div>
+				<div class="objective-card reveal" style="transition-delay:0.2s">
+					<div class="objective-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+							<polyline points="22 4 12 14.01 9 11.01" />
+						</svg></div>
+					<h3>Skill Development</h3>
+					<p>Enhance clinical skills through hands-on workshops and interactive sessions</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="isn-section">
+		<div class="container">
+			<div class="isn-content">
+				<div class="isn-info reveal">
+					<h2>About Indian Society of Nephrology</h2>
+					<p>The Indian Society of Nephrology (ISN) is the premier professional organization dedicated to the advancement of nephrology in India. Founded in 1970, the society has been instrumental in promoting research, education, and clinical practice in kidney care.</p>
+					<p>With over 5000 active members including nephrologists, transplant physicians, researchers, and healthcare professionals, ISN continues to lead initiatives in kidney disease prevention, management, and policy formulation.</p>
+					<ul class="isn-features">
+						<li>Annual National Conference (ISNCON)</li>
+						<li>Regional CME Programs</li>
+						<li>Research Grants & Fellowships</li>
+						<li>Publication of Indian Journal of Nephrology</li>
+						<li>Patient Education Initiatives</li>
+					</ul>
+				</div>
+				<div class="isn-image reveal"><img src="images/house-boat.webp" alt="Indian Society of Nephrology" /></div>
+			</div>
+		</div>
+	</section>
+
+<?php include 'footer.php'; ?>

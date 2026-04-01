@@ -14,7 +14,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&family=Space+Mono:ital@0;1&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?v=1.0.7">
+	<link rel="stylesheet" href="css/style.css?v=1.0.12">
 </head>
 
 <body>
@@ -24,6 +24,9 @@
 	<nav class="nav">
 		<div class="nav-logo"><a href="index.html"><img src="images/logo.svg" alt="ISNCON" style="height:50px" /></a>
 		</div>
+		<div class="nav-toggle" onclick="toggleMenu()">
+			<span></span><span></span><span></span>
+		</div>
 		<ul class="nav-links">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
@@ -32,8 +35,10 @@
 			<li><a href="registration.html">Registration</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
-		<a href="registration.html" class="nav-cta nav-cta-secondary">Submit Abstract</a>
-		<a href="registration.html" class="nav-cta">Register Now</a>
+		<div class="nav-buttons">
+			<a href="registration.html" class="nav-cta nav-cta-secondary">Submit Abstract</a>
+			<a href="registration.html" class="nav-cta">Register Now</a>
+		</div>
 	</nav>
 
 	<section class="hero" id="home">
@@ -504,6 +509,12 @@
 	</footer>
 
 	<script>
+		function toggleMenu() { 
+			document.querySelector('.nav-links').classList.toggle('active'); 
+			document.querySelector('.nav-buttons').classList.toggle('active'); 
+			document.querySelector('.nav-toggle').classList.toggle('active');
+			document.body.style.overflow = document.body.style.overflow === 'hidden' ? '' : 'hidden';
+		}
 		const cursorEl = document.getElementById('cursor'), ringEl = document.getElementById('cursorRing'); let mx = 0, my = 0, rx = 0, ry = 0; document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY }); (function tick() { cursorEl.style.left = mx + 'px'; cursorEl.style.top = my + 'px'; rx += (mx - rx) * .12; ry += (my - ry) * .12; ringEl.style.left = rx + 'px'; ringEl.style.top = ry + 'px'; requestAnimationFrame(tick) })();
 		let currentSlide = 0; const slides = document.querySelectorAll('.hero-slide'); const dots = document.querySelectorAll('.hero-slider-dots .dot'); function goToSlide(n) { slides.forEach(s => s.classList.remove('active')); dots.forEach(d => d.classList.remove('active')); currentSlide = n; slides[currentSlide].classList.add('active'); dots[currentSlide].classList.add('active') } setInterval(() => { goToSlide((currentSlide + 1) % slides.length) }, 5000);
 		if (window.matchMedia('(hover: hover)').matches) { const heroContent = document.querySelector('.hero-content'), cx = innerWidth / 2, cy = innerHeight / 2; document.addEventListener('mousemove', e => { const dx = (e.clientX - cx) / cx, dy = (e.clientY - cy) / cy; if (heroContent) heroContent.style.transform = `translate(${dx * 5}px,${dy * 3}px)` }) }

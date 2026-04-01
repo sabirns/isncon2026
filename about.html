@@ -10,7 +10,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&family=Space+Mono:ital@0;1&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?v=1.0.6">
+	<link rel="stylesheet" href="css/style.css?v=1.0.11">
 </head>
 
 <body>
@@ -20,6 +20,9 @@
 	<nav class="nav">
 		<div class="nav-logo"><a href="index.html"><img src="images/logo.svg" alt="ISNCON" style="height:50px" /></a>
 		</div>
+		<div class="nav-toggle" onclick="toggleMenu()">
+			<span></span><span></span><span></span>
+		</div>
 		<ul class="nav-links">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html" class="active">About</a></li>
@@ -28,8 +31,10 @@
 			<li><a href="registration.html">Registration</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
-		<a href="registration.html" class="nav-cta nav-cta-secondary">Submit Abstract</a>
-		<a href="registration.html" class="nav-cta">Register Now</a>
+		<div class="nav-buttons">
+			<a href="registration.html" class="nav-cta nav-cta-secondary">Submit Abstract</a>
+			<a href="registration.html" class="nav-cta">Register Now</a>
+		</div>
 	</nav>
 
 	<section class="page-hero">
@@ -259,6 +264,12 @@
 	</footer>
 
 	<script>
+		function toggleMenu() { 
+			document.querySelector('.nav-links').classList.toggle('active'); 
+			document.querySelector('.nav-buttons').classList.toggle('active'); 
+			document.querySelector('.nav-toggle').classList.toggle('active');
+			document.body.style.overflow = document.body.style.overflow === 'hidden' ? '' : 'hidden';
+		}
 		const cursorEl = document.getElementById('cursor'), ringEl = document.getElementById('cursorRing'); let mx = 0, my = 0, rx = 0, ry = 0; document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY }); (function tick() { cursorEl.style.left = mx + 'px'; cursorEl.style.top = my + 'px'; rx += (mx - rx) * .12; ry += (my - ry) * .12; ringEl.style.left = rx + 'px'; ringEl.style.top = ry + 'px'; requestAnimationFrame(tick) })();
 		const revealElements = document.querySelectorAll('.reveal'); function checkReveal() { const wh = window.innerHeight; revealElements.forEach(el => { if (el.getBoundingClientRect().top < wh - 100) el.classList.add('active') }) } window.addEventListener('scroll', checkReveal); checkReveal();
 	</script>

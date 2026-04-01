@@ -1,40 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Faculty | ISNCON 2026 — 55th Annual Conference</title>
-	<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&family=Space+Mono:ital@0;1&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?v=1.0.11">
-</head>
-
-<body>
-	<div class="cursor" id="cursor"></div>
-	<div class="cursor-ring" id="cursorRing"></div>
-
-	<nav class="nav">
-		<div class="nav-logo"><a href="index.html"><img src="images/logo.svg" alt="ISNCON" style="height:50px" /></a>
-		</div>
-		<div class="nav-toggle" onclick="toggleMenu()">
-			<span></span><span></span><span></span>
-		</div>
-		<ul class="nav-links">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="schedule.html">Schedule</a></li>
-			<li><a href="faculty.html" class="active">Faculty</a></li>
-			<li><a href="registration.html">Registration</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		<div class="nav-buttons">
-			<a href="registration.html" class="nav-cta nav-cta-secondary">Submit Abstract</a>
-			<a href="registration.html" class="nav-cta">Register Now</a>
-		</div>
-	</nav>
+<?php 
+$pageTitle = "Faculty | ISNCON 2026 — 55th Annual Conference";
+$currentPage = 'faculty';
+include 'header.php';
+?>
 
 	<section class="page-hero">
 		<div class="page-hero-bg">
@@ -65,48 +33,42 @@
 					<img src="images/doctor (1).jpg" alt="Dr. Michael Chen" class="faculty-card-img" />
 					<div class="faculty-card-name">Dr. Michael Chen</div>
 					<div class="faculty-card-origin">USA</div>
-					<div class="faculty-card-desc">Professor of Nephrology, Johns Hopkins University. Expert in
-						glomerular diseases and renal transplantation.</div>
+					<div class="faculty-card-desc">Professor of Nephrology, Johns Hopkins University. Expert in glomerular diseases and renal transplantation.</div>
 					<div class="faculty-card-affiliation">Johns Hopkins Hospital</div>
 				</div>
 				<div class="faculty-card reveal" style="transition-delay:0.1s">
 					<img src="images/doctor (2).jpg" alt="Dr. Sarah Thompson" class="faculty-card-img" />
 					<div class="faculty-card-name">Dr. Sarah Thompson</div>
 					<div class="faculty-card-origin">UK</div>
-					<div class="faculty-card-desc">Consultant Nephrologist, Oxford University Hospitals. Specializes in
-						CKD management and hypertension.</div>
+					<div class="faculty-card-desc">Consultant Nephrologist, Oxford University Hospitals. Specializes in CKD management and hypertension.</div>
 					<div class="faculty-card-affiliation">Oxford University</div>
 				</div>
 				<div class="faculty-card reveal" style="transition-delay:0.2s">
 					<img src="images/doctor (3).jpg" alt="Dr. Hans Mueller" class="faculty-card-img" />
 					<div class="faculty-card-name">Dr. Hans Mueller</div>
 					<div class="faculty-card-origin">Germany</div>
-					<div class="faculty-card-desc">Head of Nephrology, Charité Berlin. Expert in dialysis techniques and
-						renal replacement therapy.</div>
+					<div class="faculty-card-desc">Head of Nephrology, Charité Berlin. Expert in dialysis techniques and renal replacement therapy.</div>
 					<div class="faculty-card-affiliation">Charité Berlin</div>
 				</div>
 				<div class="faculty-card reveal">
 					<img src="images/doctor (4).jpg" alt="Dr. Yuki Tanaka" class="faculty-card-img" />
 					<div class="faculty-card-name">Dr. Yuki Tanaka</div>
 					<div class="faculty-card-origin">Japan</div>
-					<div class="faculty-card-desc">Director, Tokyo Kidney Institute. Expert in minimally invasive renal
-						procedures.</div>
+					<div class="faculty-card-desc">Director, Tokyo Kidney Institute. Expert in minimally invasive renal procedures.</div>
 					<div class="faculty-card-affiliation">Tokyo Kidney Institute</div>
 				</div>
 				<div class="faculty-card reveal" style="transition-delay:0.1s">
 					<img src="images/doctor (5).jpg" alt="Dr. Pierre Dubois" class="faculty-card-img" />
 					<div class="faculty-card-name">Dr. Pierre Dubois</div>
 					<div class="faculty-card-origin">France</div>
-					<div class="faculty-card-desc">Professor of Nephrology, Paris-Saclay University. Leading researcher
-						in renal genetics.</div>
+					<div class="faculty-card-desc">Professor of Nephrology, Paris-Saclay University. Leading researcher in renal genetics.</div>
 					<div class="faculty-card-affiliation">Paris-Saclay University</div>
 				</div>
 				<div class="faculty-card reveal" style="transition-delay:0.2s">
 					<img src="images/doctor (1).jpg" alt="Dr. Lisa Anderson" class="faculty-card-img" />
 					<div class="faculty-card-name">Dr. Lisa Anderson</div>
 					<div class="faculty-card-origin">Australia</div>
-					<div class="faculty-card-desc">Chair of Nephrology, Royal Melbourne Hospital. Specializes in
-						diabetic kidney disease.</div>
+					<div class="faculty-card-desc">Chair of Nephrology, Royal Melbourne Hospital. Specializes in diabetic kidney disease.</div>
 					<div class="faculty-card-affiliation">Royal Melbourne Hospital</div>
 				</div>
 			</div>
@@ -170,61 +132,4 @@
 		</div>
 	</section>
 
-	<footer class="footer">
-		<svg class="footer-kidney" viewBox="0 0 200 200">
-			<path fill="#fff"
-				d="M100 20c-40 0-70 30-80 70-10 45 10 100 60 100 20 0 40-10 50-30 10-20 10-40 0-60-10-20-20-40-30-80z" />
-			<circle cx="100" cy="100" r="80" stroke="#fff" stroke-width="1" fill="none" stroke-dasharray="4 8" />
-			<circle cx="100" cy="100" r="60" stroke="#00b8c8" stroke-width="0.5" fill="none" stroke-dasharray="2 6" />
-		</svg>
-		<div class="footer-grid">
-			<div class="footer-brand">
-				<img src="images/logo.svg" alt="55th Annual Conference of the Indian Society of Nephrology.">
-				<p>55th Annual Conference of the Indian Society of Nephrology.</p>
-			</div>
-			<div class="footer-col">
-				<h4>Quick Links</h4>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="schedule.html">Schedule</a></li>
-					<li><a href="faculty.html">Faculty</a></li>
-				</ul>
-			</div>
-			<div class="footer-col">
-				<h4>Information</h4>
-				<ul>
-					<li><a href="registration.html">Registration</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="#">Abstract</a></li>
-					<li><a href="#">Sponsorship</a></li>
-				</ul>
-			</div>
-			<div class="footer-col">
-				<h4>Contact</h4>
-				<ul>
-					<li><a href="mailto:info@isncon2026.com">info@isncon2026.com</a></li>
-					<li><a href="#">+91 98765 43210</a></li>
-					<li><a href="#">Kochi, Kerala</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			<p>&copy; 2026 Indian Society of Nephrology. All rights reserved.</p>
-			<p>Developed by <a href="https://www.sprdh.com">SPRDH</a></p>
-		</div>
-	</footer>
-
-	<script>
-		function toggleMenu() { 
-			document.querySelector('.nav-links').classList.toggle('active'); 
-			document.querySelector('.nav-buttons').classList.toggle('active'); 
-			document.querySelector('.nav-toggle').classList.toggle('active');
-			document.body.style.overflow = document.body.style.overflow === 'hidden' ? '' : 'hidden';
-		}
-		const cursorEl = document.getElementById('cursor'), ringEl = document.getElementById('cursorRing'); let mx = 0, my = 0, rx = 0, ry = 0; document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY }); (function tick() { cursorEl.style.left = mx + 'px'; cursorEl.style.top = my + 'px'; rx += (mx - rx) * .12; ry += (my - ry) * .12; ringEl.style.left = rx + 'px'; ringEl.style.top = ry + 'px'; requestAnimationFrame(tick) })();
-		const revealElements = document.querySelectorAll('.reveal'); function checkReveal() { const wh = window.innerHeight; revealElements.forEach(el => { if (el.getBoundingClientRect().top < wh - 100) el.classList.add('active') }) } window.addEventListener('scroll', checkReveal); checkReveal();
-	</script>
-</body>
-
-</html>
+<?php include 'footer.php'; ?>

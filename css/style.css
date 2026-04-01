@@ -180,7 +180,9 @@ body {
 }
 
 .nav-logo img {
-    height: 40px
+    height: 44px;
+    width: auto;
+    transition: height 0.3s
 }
 
 .nav-logo-text {
@@ -200,6 +202,12 @@ body {
     list-style: none
 }
 
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px
+}
+
 .nav-links a {
     text-decoration: none;
     color: var(--navy);
@@ -212,6 +220,24 @@ body {
 
 .nav-links a:hover {
     color: var(--coral)
+}
+
+.nav-links a.active {
+    color: var(--navy);
+    position: relative
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background: var(--coral);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(192, 82, 58, 0.4)
 }
 
 .nav-cta {
@@ -242,6 +268,40 @@ body {
 .nav-cta-secondary:hover {
     background: var(--navy);
     color: #fff
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--navy);
+    border-radius: 2px;
+    transition: all 0.3s
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px)
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px)
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 8px;
+    visibility: visible
 }
 
 .hero {
@@ -834,7 +894,7 @@ section {
     content: '';
     position: absolute;
     inset: 0;
-    background: url('images/kidney-bg.jpg') center/cover no-repeat;
+    background: url('../images/kidney-bg.jpg') center/cover no-repeat;
     opacity: 0.2
 }
 
@@ -1242,7 +1302,7 @@ section {
     content: '';
     position: absolute;
     inset: 0;
-    background: url('images/footerbg.jpg') center/cover no-repeat;
+    background: url('../images/footerbg.jpg') center/cover no-repeat;
     opacity: 0.2
 }
 
@@ -1335,13 +1395,81 @@ section {
     color: rgba(255, 255, 255, .5)
 }
 
-@media(max-width:1024px) {
-    .nav {
-        padding: 12px 24px
+@media(max-width:1080px) {
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(100%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    .nav-toggle {
+        display: flex;
+        z-index: 1001;
+        margin-left: 20px
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 50px;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 1000
+    }
+
+    .nav-menu.active {
+        right: 0
     }
 
     .nav-links {
-        display: none
+        flex-direction: column;
+        align-items: center;
+        gap: 24px
+    }
+
+    .nav-links a {
+        font-size: 18px
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px
+    }
+
+    .nav-cta,
+    .nav-cta-secondary {
+        width: 100%;
+        text-align: center;
+        margin: 0 !important;
+        padding: 14px !important
+    }
+
+    .nav-cta-secondary {
+        background: transparent;
+        border: 2px solid var(--navy);
+        color: var(--navy) !important
+    }
+
+    .nav-logo img {
+        height: 36px
+    }
+
+    .hero-slider-dots {
+        bottom: 100px
     }
 
     section {
@@ -1367,12 +1495,36 @@ section {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px
+        grid-template-columns: 1fr;
+        gap: 30px
     }
 
-    .hero-card {
-        display: none
+    .info-grid {
+        grid-template-columns: 1fr
+    }
+
+    .dates-grid {
+        grid-template-columns: 1fr
+    }
+
+    .inclusions-grid {
+        grid-template-columns: 1fr
+    }
+
+    .indian-grid {
+        grid-template-columns: 1fr
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr
+    }
+
+    .venue-card-grid {
+        grid-template-columns: 1fr
+    }
+
+    .map iframe {
+        height: 300px
     }
 }
 
@@ -1415,6 +1567,68 @@ section {
         flex-direction: column;
         gap: 12px;
         text-align: center
+    }
+
+    .announcement-bar {
+        padding: 10px 16px
+    }
+
+    .announcement-content {
+        flex-direction: column;
+        gap: 8px
+    }
+
+    .announcement-label {
+        font-size: 9px
+    }
+
+    .announcement-text {
+        font-size: 12px;
+        gap: 40px
+    }
+
+    .hero-slider-dots {
+        bottom: 80px
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr
+    }
+
+    .dates-grid {
+        grid-template-columns: 1fr
+    }
+
+    .inclusions-grid {
+        grid-template-columns: 1fr
+    }
+
+    .venue-features {
+        grid-template-columns: 1fr
+    }
+
+    .indian-grid {
+        grid-template-columns: 1fr
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr
+    }
+
+    .page-hero {
+        padding: 100px 20px 50px
+    }
+
+    .map iframe {
+        height: 300px
+    }
+
+    .registration-table {
+        overflow-x: auto
+    }
+
+    .registration-table table {
+        min-width: 600px
     }
 }
 

@@ -1,40 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Registration | ISNCON 2026 — 55th Annual Conference</title>
-	<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&family=Space+Mono:ital@0;1&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?v=1.0.11">
-</head>
-
-<body>
-	<div class="cursor" id="cursor"></div>
-	<div class="cursor-ring" id="cursorRing"></div>
-
-	<nav class="nav">
-		<div class="nav-logo"><a href="index.html"><img src="images/logo.svg" alt="ISNCON" style="height:50px" /></a>
-		</div>
-		<div class="nav-toggle" onclick="toggleMenu()">
-			<span></span><span></span><span></span>
-		</div>
-		<ul class="nav-links">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="schedule.html">Schedule</a></li>
-			<li><a href="faculty.html">Faculty</a></li>
-			<li><a href="registration.html" class="active">Registration</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		<div class="nav-buttons">
-			<a href="registration.html" class="nav-cta nav-cta-secondary">Submit Abstract</a>
-			<a href="registration.html" class="nav-cta">Register Now</a>
-		</div>
-	</nav>
+<?php 
+$pageTitle = "Registration | ISNCON 2026 — 55th Annual Conference";
+$currentPage = 'registration';
+include 'header.php';
+?>
 
 	<section class="page-hero">
 		<div class="page-hero-bg">
@@ -122,8 +90,7 @@
 				<h3>Important Dates</h3>
 				<div class="dates-grid">
 					<div class="date-item">
-						<div class="date-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-								stroke-width="2">
+						<div class="date-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
 								<line x1="16" y1="2" x2="16" y2="6" />
 								<line x1="8" y1="2" x2="8" y2="6" />
@@ -135,8 +102,7 @@
 						</div>
 					</div>
 					<div class="date-item">
-						<div class="date-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-								stroke-width="2">
+						<div class="date-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
 								<line x1="16" y1="2" x2="16" y2="6" />
 								<line x1="8" y1="2" x2="8" y2="6" />
@@ -148,8 +114,7 @@
 						</div>
 					</div>
 					<div class="date-item">
-						<div class="date-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-								stroke-width="2">
+						<div class="date-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
 								<line x1="16" y1="2" x2="16" y2="6" />
 								<line x1="8" y1="2" x2="8" y2="6" />
@@ -161,8 +126,7 @@
 						</div>
 					</div>
 					<div class="date-item">
-						<div class="date-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-								stroke-width="2">
+						<div class="date-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
 								<line x1="16" y1="2" x2="16" y2="6" />
 								<line x1="8" y1="2" x2="8" y2="6" />
@@ -181,16 +145,14 @@
 	<section class="inclusions">
 		<h2>What's Included</h2>
 		<div class="inclusions-grid">
-			<div class="inclusion-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-					stroke-width="2">
+			<div class="inclusion-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 					<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
 					<polyline points="22 4 12 14.01 9 11.01" />
 				</svg>
 				<h4>Conference Access</h4>
 				<p>All scientific sessions</p>
 			</div>
-			<div class="inclusion-item reveal" style="transition-delay:0.1s"><svg viewBox="0 0 24 24" fill="none"
-					stroke="currentColor" stroke-width="2">
+			<div class="inclusion-item reveal" style="transition-delay:0.1s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 					<path d="M18 8h1a4 4 0 0 1 0 8h-1" />
 					<path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
 					<line x1="6" y1="1" x2="6" y2="4" />
@@ -200,16 +162,14 @@
 				<h4>Meals</h4>
 				<p>Lunch & coffee breaks</p>
 			</div>
-			<div class="inclusion-item reveal" style="transition-delay:0.2s"><svg viewBox="0 0 24 24" fill="none"
-					stroke="currentColor" stroke-width="2">
+			<div class="inclusion-item reveal" style="transition-delay:0.2s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 					<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
 					<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
 				</svg>
 				<h4>Conference Kit</h4>
 				<p>Materials & certificates</p>
 			</div>
-			<div class="inclusion-item reveal" style="transition-delay:0.3s"><svg viewBox="0 0 24 24" fill="none"
-					stroke="currentColor" stroke-width="2">
+			<div class="inclusion-item reveal" style="transition-delay:0.3s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 					<circle cx="12" cy="12" r="10" />
 					<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
 					<line x1="12" y1="17" x2="12.01" y2="17" />
@@ -230,61 +190,4 @@
 		</div>
 	</section>
 
-	<footer class="footer">
-		<svg class="footer-kidney" viewBox="0 0 200 200">
-			<path fill="#fff"
-				d="M100 20c-40 0-70 30-80 70-10 45 10 100 60 100 20 0 40-10 50-30 10-20 10-40 0-60-10-20-20-40-30-80z" />
-			<circle cx="100" cy="100" r="80" stroke="#fff" stroke-width="1" fill="none" stroke-dasharray="4 8" />
-			<circle cx="100" cy="100" r="60" stroke="#00b8c8" stroke-width="0.5" fill="none" stroke-dasharray="2 6" />
-		</svg>
-		<div class="footer-grid">
-			<div class="footer-brand">
-				<img src="images/logo.svg" alt="55th Annual Conference of the Indian Society of Nephrology.">
-				<p>55th Annual Conference of the Indian Society of Nephrology.</p>
-			</div>
-			<div class="footer-col">
-				<h4>Quick Links</h4>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="schedule.html">Schedule</a></li>
-					<li><a href="faculty.html">Faculty</a></li>
-				</ul>
-			</div>
-			<div class="footer-col">
-				<h4>Information</h4>
-				<ul>
-					<li><a href="registration.html">Registration</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="#">Abstract</a></li>
-					<li><a href="#">Sponsorship</a></li>
-				</ul>
-			</div>
-			<div class="footer-col">
-				<h4>Contact</h4>
-				<ul>
-					<li><a href="mailto:info@isncon2026.com">info@isncon2026.com</a></li>
-					<li><a href="#">+91 98765 43210</a></li>
-					<li><a href="#">Kochi, Kerala</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			<p>&copy; 2026 Indian Society of Nephrology. All rights reserved.</p>
-			<p>Developed by <a href="https://www.sprdh.com">SPRDH</a></p>
-		</div>
-	</footer>
-
-	<script>
-		function toggleMenu() { 
-			document.querySelector('.nav-links').classList.toggle('active'); 
-			document.querySelector('.nav-buttons').classList.toggle('active'); 
-			document.querySelector('.nav-toggle').classList.toggle('active');
-			document.body.style.overflow = document.body.style.overflow === 'hidden' ? '' : 'hidden';
-		}
-		const cursorEl = document.getElementById('cursor'), ringEl = document.getElementById('cursorRing'); let mx = 0, my = 0, rx = 0, ry = 0; document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY }); (function tick() { cursorEl.style.left = mx + 'px'; cursorEl.style.top = my + 'px'; rx += (mx - rx) * .12; ry += (my - ry) * .12; ringEl.style.left = rx + 'px'; ringEl.style.top = ry + 'px'; requestAnimationFrame(tick) })();
-		const revealElements = document.querySelectorAll('.reveal'); function checkReveal() { const wh = window.innerHeight; revealElements.forEach(el => { if (el.getBoundingClientRect().top < wh - 100) el.classList.add('active') }) } window.addEventListener('scroll', checkReveal); checkReveal();
-	</script>
-</body>
-
-</html>
+<?php include 'footer.php'; ?>

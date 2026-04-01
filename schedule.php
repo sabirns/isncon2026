@@ -1,40 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Schedule | ISNCON 2026 — 55th Annual Conference</title>
-	<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&family=Space+Mono:ital@0;1&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?v=1.0.11">
-</head>
-
-<body>
-	<div class="cursor" id="cursor"></div>
-	<div class="cursor-ring" id="cursorRing"></div>
-
-	<nav class="nav">
-		<div class="nav-logo"><a href="index.html"><img src="images/logo.svg" alt="ISNCON" style="height:50px" /></a>
-		</div>
-		<div class="nav-toggle" onclick="toggleMenu()">
-			<span></span><span></span><span></span>
-		</div>
-		<ul class="nav-links">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="schedule.html" class="active">Schedule</a></li>
-			<li><a href="faculty.html">Faculty</a></li>
-			<li><a href="registration.html">Registration</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		<div class="nav-buttons">
-			<a href="registration.html" class="nav-cta nav-cta-secondary">Submit Abstract</a>
-			<a href="registration.html" class="nav-cta">Register Now</a>
-		</div>
-	</nav>
+<?php 
+$pageTitle = "Schedule | ISNCON 2026 — 55th Annual Conference";
+$currentPage = 'schedule';
+include 'header.php';
+?>
 
 	<section class="page-hero">
 		<div class="page-hero-bg">
@@ -67,24 +35,21 @@
 					<div class="schedule-time">08:00 - 09:00</div>
 					<div class="schedule-content">
 						<h3>Registration & Welcome Coffee</h3>
-						<p>Pick up your delegate kit and network with fellow attendees</p><span
-							class="schedule-tag break">Registration</span>
+						<p>Pick up your delegate kit and network with fellow attendees</p><span class="schedule-tag break">Registration</span>
 					</div>
 				</div>
 				<div class="schedule-item reveal">
 					<div class="schedule-time">09:00 - 09:30</div>
 					<div class="schedule-content">
 						<h3>Inaugural Ceremony</h3>
-						<p>Opening address by Conference Chair and Chief Guests</p><span
-							class="schedule-tag keynote">Keynote</span>
+						<p>Opening address by Conference Chair and Chief Guests</p><span class="schedule-tag keynote">Keynote</span>
 					</div>
 				</div>
 				<div class="schedule-item reveal">
 					<div class="schedule-time">09:30 - 10:30</div>
 					<div class="schedule-content">
 						<h3>Plenary Lecture: Future of Nephrology</h3>
-						<p>Dr. Michael Chen - Johns Hopkins University, USA</p><span
-							class="schedule-tag keynote">Keynote</span>
+						<p>Dr. Michael Chen - Johns Hopkins University, USA</p><span class="schedule-tag keynote">Keynote</span>
 					</div>
 				</div>
 				<div class="schedule-item reveal">
@@ -98,8 +63,7 @@
 					<div class="schedule-time">11:00 - 12:30</div>
 					<div class="schedule-content">
 						<h3>Symposium: CKD Management Updates</h3>
-						<p>Latest guidelines and treatment strategies</p><span
-							class="schedule-tag session">Session</span>
+						<p>Latest guidelines and treatment strategies</p><span class="schedule-tag session">Session</span>
 					</div>
 				</div>
 				<div class="schedule-item reveal">
@@ -120,8 +84,7 @@
 					<div class="schedule-time">16:00 - 17:30</div>
 					<div class="schedule-content">
 						<h3>Oral Paper Presentations</h3>
-						<p>Research presentations by young investigators</p><span
-							class="schedule-tag session">Session</span>
+						<p>Research presentations by young investigators</p><span class="schedule-tag session">Session</span>
 					</div>
 				</div>
 				<div class="schedule-item reveal">
@@ -145,8 +108,7 @@
 					<div class="schedule-time">09:00 - 10:30</div>
 					<div class="schedule-content">
 						<h3>Plenary: Transplant Immunology</h3>
-						<p>Dr. Hans Mueller - Charité Berlin, Germany</p><span
-							class="schedule-tag keynote">Keynote</span>
+						<p>Dr. Hans Mueller - Charité Berlin, Germany</p><span class="schedule-tag keynote">Keynote</span>
 					</div>
 				</div>
 				<div class="schedule-item reveal">
@@ -160,8 +122,7 @@
 					<div class="schedule-time">12:00 - 13:30</div>
 					<div class="schedule-content">
 						<h3>Lunch & Industry Symposia</h3>
-						<p>Sponsored sessions by pharmaceutical partners</p><span
-							class="schedule-tag break">Break</span>
+						<p>Sponsored sessions by pharmaceutical partners</p><span class="schedule-tag break">Break</span>
 					</div>
 				</div>
 				<div class="schedule-item reveal">
@@ -175,8 +136,7 @@
 					<div class="schedule-time">15:30 - 17:00</div>
 					<div class="schedule-content">
 						<h3>Panel Discussion: AI in Nephrology</h3>
-						<p>Future of diagnostic and treatment technologies</p><span
-							class="schedule-tag session">Session</span>
+						<p>Future of diagnostic and treatment technologies</p><span class="schedule-tag session">Session</span>
 					</div>
 				</div>
 				<div class="schedule-item reveal">
@@ -266,8 +226,7 @@
 					<div class="schedule-time">12:00 - 13:30</div>
 					<div class="schedule-content">
 						<h3>Lunch & Closing Ceremony</h3>
-						<p>Valedictory function and ISNCON 2027 announcement</p><span
-							class="schedule-tag break">Break</span>
+						<p>Valedictory function and ISNCON 2027 announcement</p><span class="schedule-tag break">Break</span>
 					</div>
 				</div>
 			</div>
@@ -288,16 +247,14 @@
 			</div>
 			<div class="highlights-grid">
 				<div class="highlight-card reveal">
-					<div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-							stroke-width="2">
+					<div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 							<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
 						</svg></div>
 					<h3>100+ Scientific Sessions</h3>
 					<p>Plenary lectures, symposia, workshops, and poster presentations</p>
 				</div>
 				<div class="highlight-card reveal" style="transition-delay:0.1s">
-					<div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-							stroke-width="2">
+					<div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 							<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
 							<circle cx="9" cy="7" r="4" />
 							<path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
@@ -306,8 +263,7 @@
 					<p>Connect with 2000+ nephrology professionals from 50+ countries</p>
 				</div>
 				<div class="highlight-card reveal" style="transition-delay:0.2s">
-					<div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-							stroke-width="2">
+					<div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 							<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
 							<polyline points="22 4 12 14.01 9 11.01" />
 						</svg></div>
@@ -318,62 +274,4 @@
 		</div>
 	</section>
 
-	<footer class="footer">
-		<svg class="footer-kidney" viewBox="0 0 200 200">
-			<path fill="#fff"
-				d="M100 20c-40 0-70 30-80 70-10 45 10 100 60 100 20 0 40-10 50-30 10-20 10-40 0-60-10-20-20-40-30-80z" />
-			<circle cx="100" cy="100" r="80" stroke="#fff" stroke-width="1" fill="none" stroke-dasharray="4 8" />
-			<circle cx="100" cy="100" r="60" stroke="#00b8c8" stroke-width="0.5" fill="none" stroke-dasharray="2 6" />
-		</svg>
-		<div class="footer-grid">
-			<div class="footer-brand">
-				<img src="images/logo.svg" alt="55th Annual Conference of the Indian Society of Nephrology.">
-				<p>55th Annual Conference of the Indian Society of Nephrology.</p>
-			</div>
-			<div class="footer-col">
-				<h4>Quick Links</h4>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="schedule.html">Schedule</a></li>
-					<li><a href="faculty.html">Faculty</a></li>
-				</ul>
-			</div>
-			<div class="footer-col">
-				<h4>Information</h4>
-				<ul>
-					<li><a href="registration.html">Registration</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="#">Abstract</a></li>
-					<li><a href="#">Sponsorship</a></li>
-				</ul>
-			</div>
-			<div class="footer-col">
-				<h4>Contact</h4>
-				<ul>
-					<li><a href="mailto:info@isncon2026.com">info@isncon2026.com</a></li>
-					<li><a href="#">+91 98765 43210</a></li>
-					<li><a href="#">Kochi, Kerala</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			<p>&copy; 2026 Indian Society of Nephrology. All rights reserved.</p>
-			<p>Developed by <a href="https://www.sprdh.com">SPRDH</a></p>
-		</div>
-	</footer>
-
-	<script>
-		function toggleMenu() { 
-			document.querySelector('.nav-links').classList.toggle('active'); 
-			document.querySelector('.nav-buttons').classList.toggle('active'); 
-			document.querySelector('.nav-toggle').classList.toggle('active');
-			document.body.style.overflow = document.body.style.overflow === 'hidden' ? '' : 'hidden';
-		}
-		const cursorEl = document.getElementById('cursor'), ringEl = document.getElementById('cursorRing'); let mx = 0, my = 0, rx = 0, ry = 0; document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY }); (function tick() { cursorEl.style.left = mx + 'px'; cursorEl.style.top = my + 'px'; rx += (mx - rx) * .12; ry += (my - ry) * .12; ringEl.style.left = rx + 'px'; ringEl.style.top = ry + 'px'; requestAnimationFrame(tick) })();
-		function showDay(day) { document.querySelectorAll('.schedule-grid').forEach(g => g.style.display = 'none'); document.getElementById('day' + day).style.display = 'grid'; document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active')); event.target.classList.add('active') }
-		const revealElements = document.querySelectorAll('.reveal'); function checkReveal() { const wh = window.innerHeight; revealElements.forEach(el => { if (el.getBoundingClientRect().top < wh - 100) el.classList.add('active') }) } window.addEventListener('scroll', checkReveal); checkReveal();
-	</script>
-</body>
-
-</html>
+<?php include 'footer.php'; ?>
